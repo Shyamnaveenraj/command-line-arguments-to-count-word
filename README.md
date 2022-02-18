@@ -6,22 +6,34 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+import sys
 
-### Step 2: 
- 
-### Step 3: 
+### Step 2:
+open existing file
 
-### Step 4:  
+### Step 3:
+read the content and store it in a variable
 
-### Step 5: 
+### Step 4:
+split the words in the variable and count the occurrence
 
-### Step 6: 
+Step 5:
+print the no of words 
 
 ## PROGRAM:
+import sys
+print(sys.argv[1])
+cnt=0
+with open("merge.txt","r") as f:
+    data=f.read()
+    words=data.split()
+    for i in words:
+        cnt+=1
+print("not of words=",cnt)
 
 ### OUTPUT:
-
-
+![](o2.png)
+![](o3.png)
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
